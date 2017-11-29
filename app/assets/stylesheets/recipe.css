@@ -1,0 +1,77 @@
+body {
+  background-color: beige;
+}
+
+h1, h2, #quote {
+  font-family: 'Satisfy';
+}
+input[type=text] {
+  width: 25%;
+}
+
+textarea {
+  width: 30%;
+  height: 250px;
+  resize: none;
+}
+
+#ingredientList {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 10px;
+  border-color: black;
+  width: 50%;
+  background-color: ivory;
+  padding: 10px;
+}
+
+#recipeSteps {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 10px;
+  border-color: black;
+  width: 50%;
+  background-color: ivory;
+  padding: 10px;
+}
+
+#recipeList {
+  width: 50%;
+}
+
+#peanutGallery {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: black;
+  width: 75%;
+  background-color: ivory;
+  padding: 10px;
+}
+
+.comment {
+  font-family: 'Marck Script';
+}
+
+.commenter {
+  font-family: 'Marck Script';
+  font-weight: bold;
+}
+
+.deleteComment {
+  font-family: serif;
+}
+
+.recipeHeading {
+  font-family: 'Satisfy';
+  height: 50px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: PaleGoldenRod;
+}
+
+td {
+  border-bottom: 1px solid LightGray;
+}

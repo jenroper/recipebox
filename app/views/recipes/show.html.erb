@@ -1,0 +1,43 @@
+<h1>
+  <%= strip_tags(@recipe.name) %>
+</h1>
+<h2>
+  <%= @recipe.category %>
+</h2>
+<p>
+  <b>Time Required:</b>  <%= strip_tags(@recipe.preptime) %>
+</p>
+
+<p>
+  <b>Tools Required:</b>  <%= strip_tags(@recipe.tools) %>
+</p>
+<div id="ingredientList">
+<p>
+  <strong>Ingredients:</strong><br>
+  <%= simple_format(strip_tags(@recipe.ingredients)) %>
+</p>
+</div>
+<br><br>
+<div id="recipeSteps">
+<p>
+  <b>Steps:</b><br>
+  <%= simple_format(strip_tags(@recipe.steps)) %>
+</p>
+</div>
+<p id="quote">
+  Sweet are the fruits of one's own labor.
+</p>
+
+<br><br><hr><br><br>
+
+<div id="peanutGallery">
+  <h2>Comments, Notes, & Suggestions</h2>
+  <%= render @recipe.comments %>
+</div>
+<h2>Add a comment, note, or suggestion:</h2>
+<%= render 'comments/form' %>
+
+<p>
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> | 
+<%= link_to 'Back to Recipe Box', recipes_path %>
+</p>

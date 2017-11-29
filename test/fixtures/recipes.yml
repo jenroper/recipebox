@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  preptime: MyString
+  ingredients: MyText
+  tools: MyText
+  steps: MyText
+
+two:
+  name: MyString
+  preptime: MyString
+  ingredients: MyText
+  tools: MyText
+  steps: MyText

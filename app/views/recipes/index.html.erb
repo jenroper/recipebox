@@ -1,0 +1,22 @@
+<h1>My Recipe Box</h1>
+
+<%= link_to "I've Come Up With A New Recipe!", new_recipe_path %>
+<table id="recipeList">
+  <tr>
+    <th class="recipeHeading">Name</th>
+    <th class="recipeHeading">Category</th>
+    <th class="recipeHeading">Prep Time</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.name %></td>
+      <td><%= recipe.category %></td>
+      <td><%= recipe.preptime  %></td>
+      <td><%= link_to 'Show', recipe_path(recipe) %></td>
+      <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+      <td><%= link_to 'Delete', recipe_path(recipe),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

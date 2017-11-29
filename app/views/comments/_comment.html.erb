@@ -1,0 +1,6 @@
+<p>
+  <a class="comment">"<%= comment.body %>" --</a> <a class=commenter><%= comment.commenter %></a>
+  (<a class="deleteComment"><%= link_to 'Remove', [comment.recipe, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></a>)
+</p>
